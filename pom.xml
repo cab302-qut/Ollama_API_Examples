@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ollamates</groupId>
-    <artifactId>ollama_java_j4</artifactId>
+    <artifactId>OllamaJ4_Model_Info</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>

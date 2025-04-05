@@ -19,13 +19,18 @@ import java.util.List;
 
 public class Main {
 
-    private static final String HOST = "http://localhost:11434/";
+    private static final String HOST = "z";
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
         logger.info("Application started");
-        ListModelsFromLibrary();
+        try {
+
+        ListModels();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         try {
         GetLibraryModelTags();
         } catch (Exception ex) {
@@ -46,7 +51,7 @@ public class Main {
      * @throws InterruptedException
      */
         public static void GetLibraryModelTags() throws OllamaBaseException, IOException, URISyntaxException, InterruptedException {
-
+            Narration("Getting library model tags\n");
 
             OllamaAPI ollamaAPI = new OllamaAPI(HOST);
 
@@ -64,8 +69,8 @@ public class Main {
      *
      */
 
-    public static void ListModelsFromLibrary() {
-
+    public static void ListModels() {
+        Narration("Listing available local models\\n");
         logger.debug("Debugging information");
         try {
 
@@ -81,11 +86,15 @@ public class Main {
     }
 
     public static void FindSpecificModel() throws OllamaBaseException, IOException, URISyntaxException, InterruptedException {
-
+        Narration("Finding a specific mode\n");
         OllamaAPI ollamaAPI = new OllamaAPI(HOST);
 
         LibraryModelTag libraryModelTag = ollamaAPI.findModelTagFromLibrary("qwen2.5", "7b");
 
         System.out.println(libraryModelTag);
+    }
+
+    public static void Narration(String narr) {
+        System.out.println("\nCurrently executing " + narr);
     }
 }

@@ -10,3 +10,25 @@ java.lang.RuntimeException: Test error
 	at com.ollamates.Main.ListModelsFromLibrary(Main.java:79) ~[classes/:?]
 	at com.ollamates.Main.main(Main.java:28) ~[classes/:?]
 2025-04-05T15:33:35,855 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T20:24:37,012 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:14:54,698 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:15:06,051 [main] ERROR com.ollamates.Main - An error occurred
+java.lang.RuntimeException: Test error
+	at com.ollamates.Main.ListModelsFromLibrary(Main.java:79) ~[classes/:?]
+	at com.ollamates.Main.main(Main.java:28) ~[classes/:?]
+2025-04-05T21:17:39,688 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:17:51,044 [main] ERROR com.ollamates.Main - An error occurred
+java.lang.RuntimeException: Test error
+	at com.ollamates.Main.ListModelsFromLibrary(Main.java:83) ~[classes/:?]
+	at com.ollamates.Main.main(Main.java:29) ~[classes/:?]
+2025-04-05T21:21:25,483 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:21:36,819 [main] ERROR com.ollamates.Main - An error occurred
+java.lang.RuntimeException: Test error
+	at com.ollamates.Main.ListModels(Main.java:83) ~[classes/:?]
+	at com.ollamates.Main.main(Main.java:29) ~[classes/:?]
+2025-04-05T21:32:16,599 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:37:41,427 [main] INFO  com.ollamates.Main - Application started
+2025-04-05T21:37:52,753 [main] ERROR com.ollamates.Main - An error occurred
+java.lang.RuntimeException: Test error
+	at com.ollamates.Main.ListModels(Main.java:84) ~[classes/:?]
+	at com.ollamates.Main.main(Main.java:30) ~[classes/:?]
